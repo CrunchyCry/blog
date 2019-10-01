@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+ .LogIn {
+     text-align: right;
+     a{
+        text-transform: capitalize;
+        background-color: blue;
+     }
+ }
+
+ body { 
+
+    margin: auto 15%; 
+    margin-top: 1vh;
+    font-family: "Arial"
+ }
+
+ a {
+    padding: 2px 5px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+}
+
+.User {
+    font-size: 1.3em; 
+
+}
+
+.Title {
+    font-size: 1.3em;
+}
+
+.Text {
+    font-size: 1.3em;
+}
+
+.LogInMask {
+    float: left; 
+}
+
+.LogInMaskLink {
+    text-align: left;
+}

@@ -1,5 +1,9 @@
 <h1>Listing articles</h1>
-<%= link_to 'New article', new_article_path %>
+<% if can? :manage, Article %> 
+  <div>
+    <%= link_to 'New article', new_article_path %>
+  </div>
+<% end %>
 
 <table>
 
@@ -7,7 +11,7 @@
     <th>Title</th>
     <th>Text</th>
     <th>user</th>
-    <th colspan="3"></th>
+    <th colspan="3" class="noData"></th>
   </tr>
 
   <% @articles.each do |article| %>
@@ -15,13 +19,15 @@
       <td><%= article.title %></td>
       <td><%= article.text %></td>
       <td><%= article.user.email %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
+      <td class="noData"><%= link_to 'Show', article_path(article) %></td>
+      <td class="noData"><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td id="Destroy" class="noData"><%= link_to 'Destroy', article_path(article),
       method: :delete,
       data: { confirm: 'Are you sure?' } %></td>
 
     </tr>
   <% end %>
 </table>
+
+
 

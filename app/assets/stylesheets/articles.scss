@@ -1,3 +1,54 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+table {
+    width: 100%;
+
+    td:not(.noData), th:not(.noData) {
+        border: 1px solid #ddd; 
+        padding: 8px;
+    } 
+
+    th:not(.noData) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4caf50;
+        color: white;
+    } 
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+} 
+
+div {
+    text-align: right;
+}
+
+a {
+    padding: 2px 5px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+
+}
+
+ #Destroy a {
+    background-color: #cc0000;
+}
+
+.User {
+    font-size: 1.5em; 
+
+}
+
+.Title {
+    font-size: 1.5em;
+}
+
+.Text {
+    font-size: 1.5em;
+    padding-bottom: 180px;
+}
