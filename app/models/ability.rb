@@ -4,11 +4,12 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
+    can :read, Article, public: true
     if user.present? 
-      can :manage, Article
-      # if user.role = 'admin'?
-       # can :manage, Article
-      # end
+      can :read, Article, user_id: user.id
+      if user.role.eql? 'admin'
+        can :manage, Article, public: true
+      end
     end  
   end
 end
