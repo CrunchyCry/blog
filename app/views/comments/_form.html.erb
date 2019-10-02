@@ -1,9 +1,9 @@
-<%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
-
+<% if can? :create, Comment %>
+  <%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
     <p>
        you will be shown as <%= current_user.email%>
     </p>
-    
+
     <p>
       <%= form.label :body %><br>
       <%= form.text_area :body %>
@@ -12,3 +12,4 @@
       <%= form.submit %>
     </p>
   <% end %>
+<% end %>

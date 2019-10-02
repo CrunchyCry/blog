@@ -6,9 +6,16 @@ class Ability
   def initialize(user)
     can :read, Article, public: true
     if user.present? 
-      can :read, Article, user_id: user.id
       if user.role.eql? 'admin'
-        can :manage, Article, public: true
+        can :manage, :all
+      end
+      if user.role.eql? 'reader'
+        can :read, Article
+        can :create, Comment
+        can :destroy, Comment, user_id: user.id
+      end
+      if user.role.eql? 'readonly'
+        can :read, [Article, Comment]
       end
     end  
   end
