@@ -31,12 +31,15 @@ a {
     padding: 2px 5px;
     background-color: #4caf50;
     color: white;
-    border-radius: 4px;
+    border-radius: 5px;
+    margin: 10px;
+
 
 }
 
  #Destroy a {
     background-color: #cc0000;
+    padding-left: 2px;
 }
 
 .User {
@@ -51,4 +54,8 @@ a {
 .Text {
     font-size: 1.5em;
     padding-bottom: 180px;
+}
+
+#Btn_new_Article {
+    margin: 4px;
 }
