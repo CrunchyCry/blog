@@ -1,5 +1,5 @@
 class Car
-  attr_accessor :color, :tires, :max_speed, :max_gears, :actual_speed, :actual_gear
+  attr_accessor :color, :tires, :max_speed, :max_gears, :actual_speed, :actual_gear, :slow_down
   
   def initialize(color, tires, max_speed, max_gears)
     @color = color
@@ -32,13 +32,13 @@ class Car
     end
   end
 
-  def slow_down
-    
-    
-    
+  def slow_down(speed)
+    if 0 < (actual_speed - speed)
+      self.actual_speed = actual_speed - speed
+    else
+      self.actual_speed = 0
+    end 
   end
-
-
 end
 
 
