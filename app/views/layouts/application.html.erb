@@ -18,6 +18,13 @@
     <% else %>
       <%= link_to "log in", new_user_session_path %> 
     <% end %>
+
+    <div class="UserRoles">
+    <% if can? :manage, User %>
+      <%= link_to "Users", users_index_path %>
+    <% end %>
+    
+
     </div>
     <%= yield %>
   </body>
