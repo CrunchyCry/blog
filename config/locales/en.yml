@@ -3,3 +3,29 @@ en:
     index:
       title: "Hello, Rails!"
       my_blog: "My Blog"
+  layouts:
+    aplication:
+      log_out: "Log Out"
+      log_in: "Log In "
+      users: "Users"
+  articles:s
+    index:
+      listing_articles: "Listing Articles"
+      new_article: "New Article"
+      title: "Title"
+      text: "Text"
+      user: "User"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Delete"
+    new:
+      new_article: "New Article"
+      title: "Title"
+      text: "Text"
+      back: "Back"
+  users:
+    index:
+      user: "User"
+      role: "Role"
+      home: "Home"
+  
