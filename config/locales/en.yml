@@ -1,33 +1,46 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  welcome:
+    index:
+      title: "Hello, Rails!"
+      my_blog: "My Blog"
+  layouts:
+    aplication:
+      log_out: "Log Out"
+      log_in: "Log In "
+      users: "Users"
+  articles:
+    index:
+      listing_articles: "Listing Articles"
+      new_article: "New Article"
+      title: "Title"
+      text: "Text"
+      user: "User"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Delete"
+    new:
+      new_article: "New Article"
+      title: "Title"
+      text: "Text"
+      back: "Back"
+    show:
+      user: "User"
+      title: "Title"
+      text: "Text"
+      comments: "Comments"
+      add_comment: "Add a comment"
+      edit: "Edit"
+      back: "Back"
+  users:
+    index:
+      user: "User"
+      role: "Role"
+      home: "Home"
+  comments:
+    comment:
+      commenter: "Commenter"
+      comment: "Comment"
+      destroy_comment: "Delete Comment"
+    form:
+      shown_as: "You will be shown as %{user}"
+      create_comment: "Create Comment"
