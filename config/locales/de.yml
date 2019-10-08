@@ -23,9 +23,24 @@ de:
       title: "Titel"
       text: "Text"
       back: "Zurück"
+    show:
+      user: "Nutzer"
+      title: "Titel"
+      text: "Text"
+      comments: "Kommentare"
+      add_comment: "Kommentieren"
+      edit: "Bearbeiten"
+      back: "Zurück"
   users:
     index:
       user: "Nutzer"
       role: "Rolle"
       home: "Startseite"
-  
+  comments:
+    comment:
+      commenter: "Autor"
+      comment: "Kommentar"
+      destroy_comment: "Kommentar Löschen"
+    form:
+      shown_as: "Du wirst als %{user} angezeigt" 
+      create_comment: "Kommnetear erstellen"

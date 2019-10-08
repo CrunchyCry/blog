@@ -8,7 +8,7 @@ en:
       log_out: "Log Out"
       log_in: "Log In "
       users: "Users"
-  articles:s
+  articles:
     index:
       listing_articles: "Listing Articles"
       new_article: "New Article"
@@ -23,9 +23,24 @@ en:
       title: "Title"
       text: "Text"
       back: "Back"
+    show:
+      user: "User"
+      title: "Title"
+      text: "Text"
+      comments: "Comments"
+      add_comment: "Add a comment"
+      edit: "Edit"
+      back: "Back"
   users:
     index:
       user: "User"
       role: "Role"
       home: "Home"
-  
+  comments:
+    comment:
+      commenter: "Commenter"
+      comment: "Comment"
+      destroy_comment: "Delete Comment"
+    form:
+      shown_as: "You will be shown as %{user}"
+      create_comment: "Create Comment"

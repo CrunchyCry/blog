@@ -9,17 +9,14 @@
 
   <tr>
     <th><%=t('.title')%></th>
-    <th><%=t('.text')%></th>
     <th><%=t('.user')%></th>
-    <th colspan="3" ></th>
+    <th colspan="2" ></th>
   </tr>
 
   <% @articles.each do |article| %>
     <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
+      <td><%= link_to article.title, article_path(article) %></td>
       <td><%= article.user.email %></td>
-      <td class="noData"><%= link_to t('.show'), article_path(article) %></td>
       <%if can? :manage, Article %>
         <td class="noData"><%= link_to t('.edit'), edit_article_path(article) %></td>
         <td id="Destroy" class="noData"><%= link_to t('.destroy'), article_path(article),

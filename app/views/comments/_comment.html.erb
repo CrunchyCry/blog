@@ -1,15 +1,15 @@
 <p>
-  <strong>Commenter:</strong>
+  <strong><%=t('.commenter')%>:</strong>
   <%= comment.user.email %>
 </p>
  
 <p>
-  <strong>Comment:</strong>
+  <strong><%=t('.comment')%>:</strong>
   <%= comment.body %>
 </p> 
 <% if can? :destroy, comment %>
   <p>
-    <%= link_to 'Destroy Comment', [comment.article, comment],
+    <%= link_to t('.destroy_comment'), [comment.article, comment],
         method: :delete,
         data: { confirm: 'Are you sure?' } %>
         

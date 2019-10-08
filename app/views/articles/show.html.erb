@@ -1,23 +1,23 @@
 <p class=User> 
-  <strong>user:</strong>
+  <strong><%=t('.user')%>:</strong>
   <%= @article.user.email %>
 </p>
 
 <p class="Title">
-  <strong>Title:</strong>
+  <strong><%=t('.title')%>:</strong>
   <%= @article.title %>
 </p>
 
 <p class="Text">
-  <strong>Text:</strong>
+  <strong><%=t('.text')%>:</strong>
   <%= @article.text %>
 </p>
  
-<h2>Comments</h2>
+<h2><%=t('.comments')%></h2>
 <%= render @article.comments %>
 
  
-<h2>Add a comment:</h2>
+<h2><%= t('.add_comment')%></h2>
 <%= render 'comments/form' %>
  
  <% if can? :manage, Article %>
