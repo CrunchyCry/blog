@@ -2,3 +2,4 @@ en:
   welcome:
     index:
       title: "Hello, Rails!"
+      my_blog: "My Blog"

@@ -3,3 +3,4 @@ de:
   welcome:
     index:
       title: "Hallo, Rails!"
+      my_blog: "Mein Blog"
