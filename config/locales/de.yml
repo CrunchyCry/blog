@@ -1,6 +1,31 @@
 de:
-
   welcome:
     index:
       title: "Hallo, Rails!"
       my_blog: "Mein Blog"
+  layouts:
+    application:
+      log_out: "Ausloggen"
+      log_in: "Einloggen"
+      users: "Nutzer"
+  articles:
+    index:
+      listing_articles: "Alle Atrikel"
+      new_article: "Neuer Article"
+      title:  "Titel"
+      text:  "Text"
+      user:  "Nutzer"
+      show:  "Anzeigen"
+      edit:  "Bearbeiten"
+      destroy: "Löschen"
+    new:
+      new_article: "Neuer Artikel"
+      title: "Titel"
+      text: "Text"
+      back: "Zurück"
+  users:
+    index:
+      user: "Nutzer"
+      role: "Rolle"
+      home: "Startseite"
+  
