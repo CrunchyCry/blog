@@ -22,6 +22,7 @@ en:
       new_article: "New Article"
       title: "Title"
       text: "Text"
+      submit: "Submit Article"
       back: "Back"
     show:
       user: "User"
@@ -31,6 +32,14 @@ en:
       add_comment: "Add a comment"
       edit: "Edit"
       back: "Back"
+    edit:
+      edit_article: "Edit article"
+      title: "Title"
+      text: "Text"
+      back: "Back"
+      submit: "Submit"
+    form:
+      title: 
   users:
     index:
       user: "User"
@@ -41,6 +50,19 @@ en:
       commenter: "Commenter"
       comment: "Comment"
       destroy_comment: "Delete Comment"
+      are_you_sure: "Are you sure?"
     form:
       shown_as: "You will be shown as %{user}"
       create_comment: "Create Comment"
+  devise:
+    passwords:
+      new:
+        forgot_your_password: "Forgot your password?"
+        send_me_reset_password_instructions: "send me reset password instructions"
+    registrations:
+      new:
+        sign_up: "Sign up"
+        password: "Password"
+        characters_minimum: "Characers minimum"
+        sign_in: "Sign in"
+        password_confirmation: "Password confirmation"

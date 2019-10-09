@@ -11,7 +11,7 @@ de:
   articles:
     index:
       listing_articles: "Alle Atrikel"
-      new_article: "Neuer Article"
+      new_article: "Neuer Artikel"
       title:  "Titel"
       text:  "Text"
       user:  "Nutzer"
@@ -22,8 +22,10 @@ de:
       new_article: "Neuer Artikel"
       title: "Titel"
       text: "Text"
+      submit: "Atikel senden"
       back: "Zurück"
     show:
+      error: "fehler"
       user: "Nutzer"
       title: "Titel"
       text: "Text"
@@ -31,6 +33,14 @@ de:
       add_comment: "Kommentieren"
       edit: "Bearbeiten"
       back: "Zurück"
+    edit:
+      edit_article: "Artikel bearbeiten"
+      title: "Titel"
+      text: "Text"
+      back: "Zurück"
+      submit: "Artikel senden"
+    form:
+      title:
   users:
     index:
       user: "Nutzer"
@@ -41,6 +51,19 @@ de:
       commenter: "Autor"
       comment: "Kommentar"
       destroy_comment: "Kommentar Löschen"
+      are_you_sure: "Sind Sie sich sicher?"
     form:
       shown_as: "Du wirst als %{user} angezeigt" 
-      create_comment: "Kommnetear erstellen"
+      create_comment: "Kommentar erstellen"
+  devise:
+    passwords:
+      new:
+        forgot_your_password: "Passwort vergessen"
+        send_me_reset_password_instructions: "Passwort zurücksetzten"
+    registrations:
+      new:
+        sign_up: "Anmelden"
+        password: "Passwort"
+        characters_minimum: "Zeichen mindestens"
+        sign_in: "Anmelden"
+        password_confirmation: "Passwort bestätigen"
