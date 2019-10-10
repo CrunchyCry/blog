@@ -18,12 +18,14 @@ en:
       show: "Show"
       edit: "Edit"
       destroy: "Delete"
+      are_you_sure: " Are you sure?"
     new:
       new_article: "New Article"
       title: "Title"
       text: "Text"
       submit: "Submit Article"
       back: "Back"
+      prohibited_this_article_from_being_saved: " prohibited this article from being saved"
     show:
       user: "User"
       title: "Title"
@@ -38,8 +40,9 @@ en:
       text: "Text"
       back: "Back"
       submit: "Submit"
+      prohibited_this_article_from_being_saved: "prohibited this article from being saved"
     form:
-      title: 
+      title:
   users:
     index:
       user: "User"
@@ -73,6 +76,11 @@ en:
         password: "Password"
         remember_me: "Remember me"
         log_in: "Log in"
+    shared:
+      links:
+        sign_up: "Sign Up"
+        log_in: "Log in"
+        forgot_your_password: "Forgot your password?"
 
 
         

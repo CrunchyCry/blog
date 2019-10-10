@@ -18,12 +18,14 @@ de:
       show:  "Anzeigen"
       edit:  "Bearbeiten"
       destroy: "Löschen"
+      are_you_sure: "Sind Sie sich sicher?"
     new:
       new_article: "Neuer Artikel"
       title: "Titel"
       text: "Text"
       submit: "Atikel senden"
       back: "Zurück"
+      prohibited_this_article_from_being_saved: " verhindern das die Artikel nicht gespeichert werden"
     show:
       error: "fehler"
       user: "Nutzer"
@@ -39,6 +41,7 @@ de:
       text: "Text"
       back: "Zurück"
       submit: "Artikel senden"
+      prohibited_this_article_from_being_saved:  " verhindert das der Artikel geändert wird"
     form:
       title:
   users:
@@ -74,3 +77,16 @@ de:
         password: "Passwort"
         remember_me: "Eingeloggt bleiben"
         log_in: "Einloggen"
+    shared:
+      links:
+        sign_up: "Registrieren"
+        log_in: "Einloggen" 
+        forgot_your_password: "Passwort vergessen?"
+  activerecord:
+    errors:
+      models:
+        article:
+          attributes:
+            title:
+              blank: "Titel darf nicht leer sein"
+              too_short: "Titel muss mindestens 5 Zeichen lang sein"
