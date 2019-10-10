@@ -67,10 +67,10 @@ de:
         characters_minimum: "Zeichen mindestens"
         sign_in: "Anmelden"
         password_confirmation: "Passwort bestätigen"
-    session:
+    sessions:
       new:
         log_in: "Einloggen"
         email: "E-Mail"
         password: "Passwort"
         remember_me: "Eingeloggt bleiben"
-        
+        log_in: "Einloggen"

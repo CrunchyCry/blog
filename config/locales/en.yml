@@ -66,11 +66,14 @@ en:
         characters_minimum: "Characers minimum"
         sign_in: "Sign in"
         password_confirmation: "Password confirmation"
-    session:
+    sessions:
       new:
         log_in: "Log in"
         email: "Email"
         password: "Password"
         remember_me: "Remember me"
+        log_in: "Log in"
+
+
         
 
