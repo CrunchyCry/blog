@@ -11,7 +11,7 @@
   <p>
     <%= link_to t('.destroy_comment'), [comment.article, comment],
         method: :delete,
-        data: { confirm: 'Are you sure?' } %>
+        data: { confirm: t('.are_you_sure') } %>
         
   </p>
 <% end %>

@@ -1,4 +1,4 @@
-<h1><%=t('.edit_article')</h1>
+<h1><%=t('.edit_article')%></h1>
  
 <%= form_with(model: @article, local: true) do |form| %>
  
@@ -17,17 +17,17 @@
   <% end %>
  
   <p>
-    <%= form.label :title %><br>
+    <%= form.label :title, t('.title')%><br>
     <%= form.text_field :title %>
   </p>
  
   <p>
-    <%= form.label :text %><br>
+    <%= form.label :text, t('.text') %><br>
     <%= form.text_area :text %>
   </p>
  
   <p>
-    <%= form.submit %>
+    <%= form.submit t('.submit')%>
   </p>
  
 <% end %>
