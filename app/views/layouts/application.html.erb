@@ -13,6 +13,18 @@
 
   
   <body>
+    <% if current_user.present? %>
+      <% if current_user.theme == 'light' %>
+        <%- current_user.theme = 'dark' %>
+        <%- current_user.save %>
+        <%= link_to "dark mode", welcome_index_path, method: :get %>
+      <% else  %>
+        <%- current_user.theme = 'light' %>
+        <%- current_user.save %>
+        <%= link_to "light mode", welcome_index_path, method: :get %>
+      <% end %>
+    <% end %>
+
     <div class="LogIn">
     <% if user_signed_in? %>
       <%= current_user.email %>
