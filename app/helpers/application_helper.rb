@@ -1,7 +1,7 @@
 module ApplicationHelper
     def current_theme
         if current_user.present?
-            'dark'
+            current_user.theme
         else
             'light'
         end
