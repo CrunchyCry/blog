@@ -9,20 +9,19 @@
     <%= stylesheet_link_tag "#{current_theme}" %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script>
+      function switchTheme() {
+        location.reload();
+      };
+      setTimeout(switchTheme, 1000);
+      </script>
   </head>
 
   
   <body>
     <% if current_user.present? %>
-      <% if current_user.theme == 'light' %>
-        <%- current_user.theme = 'dark' %>
-        <%- current_user.save %>
-        <%= link_to "dark mode", welcome_index_path, method: :get %>
-      <% else  %>
-        <%- current_user.theme = 'light' %>
-        <%- current_user.save %>
-        <%= link_to "light mode", welcome_index_path, method: :get %>
-      <% end %>
+      <%= button_to "Change background", application_change_theme_path, :onclick => 'switchTheme()' %>
     <% end %>
 
     <div class="LogIn">

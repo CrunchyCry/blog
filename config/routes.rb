@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  post 'application/change_theme'
   devise_for :users
   get 'welcome/index'
-  
   resources :articles do
     resources :comments
   end

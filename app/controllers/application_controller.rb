@@ -19,6 +19,19 @@ class ApplicationController < ActionController::Base
     I18n.with_locale(locale, &action)
   end
   
+  def change_theme
+    if current_user.theme == 'light' 
+      current_user.theme = 'dark' 
+       current_user.save 
+       #link_to "dark mode", welcome_index_path, method: :get 
+     else  
+       current_user.theme = 'light' 
+       current_user.save 
+       #link_to "light mode", welcome_index_path, method: :get 
+   end 
+      #redirect_to :root
+end
+
   protected
     def set_i18n_locale_from_params
       if params[:locale]
@@ -40,4 +53,6 @@ class ApplicationController < ActionController::Base
       parsed_locale = request.host.split('.').last
       I18n.available_locales.map(&:to_s).include?(parsed_locale) ? parsed_locale : nil
     end
+
+    
 end
